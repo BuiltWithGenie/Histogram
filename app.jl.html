@@ -1,26 +1,13 @@
-<header class="st-header q-pa-sm">
-    <h1 class="st-header__title text-h3">Normal distribution statistics</h1>
-</header>
+<h3>Normal distribution statistics</h3>
 <div class="row">
-    <div class="col col-6 col-sm" style="padding-right:50px">
-        <h3>Number of samples </h3>
-        <q-slider v-model="N" :min="0" :max="10000" :step="100" :label="true"></q-slider>
+    <div class="st-col col-12 col-sm st-module">
+        <h6>Vector length</h6>
+        <q-slider id="ie0zu" v-model="N" color="primary" :label="true" :max="10000" :min="0" :step="10"></q-slider>
     </div>
-    <div class="col col-6 col-sm">
-        <div class="row">
-            <div class="col col-4 col-sm">
-                <h3>Mean</h3>
-                <h4 v-text="m"></h4>
-            </div>
-            <div class="col col-4 col-sm">
-                <h3>St. dev.</h3>
-                <h4 v-text="s"></h4>
-            </div>
-            <div class="col col-4 col-sm">
-                <h3>Variance</h3>
-                <h4 v-text="v"></h4>
-            </div>
-        </div>
+    <div id="iw88j" class="st-col col-12 col-sm st-module flex">
+        <st-big-number id="ipvc1" :number="m" title="Mean"></st-big-number>
+        <st-big-number id="i463e" :number="s" title="St. dev."></st-big-number>
+        <st-big-number id="imi2m" :number="v" title="Variance"></st-big-number>
     </div>
 </div>
 <div class="row">
